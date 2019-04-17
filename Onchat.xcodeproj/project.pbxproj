@@ -16,6 +16,7 @@
 		5337F6BE2266D99600816B5C /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5337F6BD2266D99600816B5C /* ChannelVC.swift */; };
 		5337F6C42266DB0300816B5C /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5337F6C12266DB0300816B5C /* SWRevealViewController.m */; };
 		53EDE8052266F2420041FAD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EDE8042266F2420041FAD2 /* ViewController.swift */; };
+		53EDE807226704740041FAD2 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EDE806226704730041FAD2 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		5337F6C22266DB0300816B5C /* Smack-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Smack-Bridging-Header.h"; sourceTree = "<group>"; };
 		5337F6C32266DB0300816B5C /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		53EDE8042266F2420041FAD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		53EDE806226704730041FAD2 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		7835255D7A48AA8E513ACA92 /* Pods-Onchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Onchat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Onchat/Pods-Onchat.debug.xcconfig"; sourceTree = "<group>"; };
 		B8524ECF6C687FE561D7A627 /* Pods_Onchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Onchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -94,6 +96,7 @@
 		5337F6B92266D8E900816B5C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				53EDE806226704730041FAD2 /* GradientView.swift */,
 			);
 			name = View;
 			path = ..;
@@ -260,6 +263,7 @@
 			files = (
 				53EDE8052266F2420041FAD2 /* ViewController.swift in Sources */,
 				5337F6BE2266D99600816B5C /* ChannelVC.swift in Sources */,
+				53EDE807226704740041FAD2 /* GradientView.swift in Sources */,
 				5337F6BC2266D97C00816B5C /* ChatVC.swift in Sources */,
 				5337F6C42266DB0300816B5C /* SWRevealViewController.m in Sources */,
 				5337F6A622666AD000816B5C /* AppDelegate.swift in Sources */,
