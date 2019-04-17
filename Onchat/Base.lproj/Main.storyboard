@@ -90,7 +90,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLX-a7-fST">
-                                <rect key="frame" x="111" y="593" width="44" height="33"/>
+                                <rect key="frame" x="107" y="593" width="44" height="33"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -105,7 +105,7 @@
                             <constraint firstItem="n4j-mb-IAu" firstAttribute="top" secondItem="VZU-gh-6De" secondAttribute="bottom" constant="20" id="5Ku-WG-Sdl"/>
                             <constraint firstItem="htU-T4-2tH" firstAttribute="centerY" secondItem="hR5-h3-9jV" secondAttribute="centerY" id="EXe-6Z-Hts"/>
                             <constraint firstItem="V5h-qg-BCC" firstAttribute="trailing" secondItem="htU-T4-2tH" secondAttribute="trailing" constant="72" id="FMz-pe-YTY"/>
-                            <constraint firstItem="XLX-a7-fST" firstAttribute="leading" secondItem="n4j-mb-IAu" secondAttribute="trailing" constant="20" id="N8R-5i-jzs"/>
+                            <constraint firstItem="XLX-a7-fST" firstAttribute="leading" secondItem="n4j-mb-IAu" secondAttribute="trailing" constant="16" id="N8R-5i-jzs"/>
                             <constraint firstItem="Hkp-Ew-yc6" firstAttribute="top" secondItem="V5h-qg-BCC" secondAttribute="top" constant="24" id="WaJ-xh-rx3"/>
                             <constraint firstItem="V5h-qg-BCC" firstAttribute="bottom" secondItem="n4j-mb-IAu" secondAttribute="bottom" constant="20" id="XZW-m8-4rJ"/>
                             <constraint firstItem="VZU-gh-6De" firstAttribute="leading" secondItem="V5h-qg-BCC" secondAttribute="leading" id="Y3m-3e-GMQ"/>
@@ -250,20 +250,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fmK-cm-hfc">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEz-Bw-SQb">
-                                        <rect key="frame" x="12" y="47" width="24" height="18"/>
+                                        <rect key="frame" x="12" y="48" width="26" height="20"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="24" id="Pu6-OJ-bJZ"/>
-                                            <constraint firstAttribute="height" constant="18" id="QAj-lD-m13"/>
+                                            <constraint firstAttribute="width" constant="26" id="Pu6-OJ-bJZ"/>
+                                            <constraint firstAttribute="height" constant="20" id="QAj-lD-m13"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="smackBurger">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Onchat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcD-TB-q1N">
-                                        <rect key="frame" x="157" y="45" width="61" height="22"/>
+                                        <rect key="frame" x="157" y="47" width="61" height="22"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -272,7 +272,7 @@
                                 <color key="backgroundColor" red="0.29019607843137252" green="0.30196078431372547" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="gcD-TB-q1N" firstAttribute="centerX" secondItem="fmK-cm-hfc" secondAttribute="centerX" id="bMs-bb-HCO"/>
-                                    <constraint firstAttribute="height" constant="77" id="c4H-ih-z7T"/>
+                                    <constraint firstAttribute="height" constant="80" id="c4H-ih-z7T"/>
                                     <constraint firstItem="gcD-TB-q1N" firstAttribute="centerY" secondItem="iEz-Bw-SQb" secondAttribute="centerY" id="hDS-kC-M6n"/>
                                     <constraint firstItem="iEz-Bw-SQb" firstAttribute="leading" secondItem="fmK-cm-hfc" secondAttribute="leading" constant="12" id="o0H-N7-VNe"/>
                                     <constraint firstAttribute="bottom" secondItem="iEz-Bw-SQb" secondAttribute="bottom" constant="12" id="yJH-wF-tPV"/>
