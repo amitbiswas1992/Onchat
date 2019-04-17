@@ -9,20 +9,19 @@
 /* Begin PBXBuildFile section */
 		1619E25CD16E8E6FFC1A78AC /* Pods_Onchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8524ECF6C687FE561D7A627 /* Pods_Onchat.framework */; };
 		5337F6A622666AD000816B5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5337F6A522666AD000816B5C /* AppDelegate.swift */; };
-		5337F6A822666AD000816B5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5337F6A722666AD000816B5C /* ViewController.swift */; };
 		5337F6AB22666AD000816B5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5337F6A922666AD000816B5C /* Main.storyboard */; };
 		5337F6AD22666AD200816B5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5337F6AC22666AD200816B5C /* Assets.xcassets */; };
 		5337F6B022666AD300816B5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5337F6AE22666AD300816B5C /* LaunchScreen.storyboard */; };
 		5337F6BC2266D97C00816B5C /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5337F6BB2266D97C00816B5C /* ChatVC.swift */; };
 		5337F6BE2266D99600816B5C /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5337F6BD2266D99600816B5C /* ChannelVC.swift */; };
 		5337F6C42266DB0300816B5C /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5337F6C12266DB0300816B5C /* SWRevealViewController.m */; };
+		53EDE8052266F2420041FAD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EDE8042266F2420041FAD2 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		288078A738F78AA6AF7AE185 /* Pods-Onchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Onchat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Onchat/Pods-Onchat.release.xcconfig"; sourceTree = "<group>"; };
 		5337F6A222666AD000816B5C /* Onchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Onchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5337F6A522666AD000816B5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5337F6A722666AD000816B5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5337F6AA22666AD000816B5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5337F6AC22666AD200816B5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5337F6AF22666AD300816B5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -33,6 +32,7 @@
 		5337F6C12266DB0300816B5C /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		5337F6C22266DB0300816B5C /* Smack-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Smack-Bridging-Header.h"; sourceTree = "<group>"; };
 		5337F6C32266DB0300816B5C /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		53EDE8042266F2420041FAD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7835255D7A48AA8E513ACA92 /* Pods-Onchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Onchat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Onchat/Pods-Onchat.debug.xcconfig"; sourceTree = "<group>"; };
 		B8524ECF6C687FE561D7A627 /* Pods_Onchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Onchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -75,7 +75,6 @@
 				5337F6B92266D8E900816B5C /* View */,
 				5337F6B82266D8D700816B5C /* Model */,
 				5337F6A522666AD000816B5C /* AppDelegate.swift */,
-				5337F6A722666AD000816B5C /* ViewController.swift */,
 				5337F6A922666AD000816B5C /* Main.storyboard */,
 				5337F6AC22666AD200816B5C /* Assets.xcassets */,
 				5337F6AE22666AD300816B5C /* LaunchScreen.storyboard */,
@@ -105,6 +104,7 @@
 			children = (
 				5337F6BB2266D97C00816B5C /* ChatVC.swift */,
 				5337F6BD2266D99600816B5C /* ChannelVC.swift */,
+				53EDE8042266F2420041FAD2 /* ViewController.swift */,
 			);
 			name = Controller;
 			path = ..;
@@ -258,10 +258,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53EDE8052266F2420041FAD2 /* ViewController.swift in Sources */,
 				5337F6BE2266D99600816B5C /* ChannelVC.swift in Sources */,
 				5337F6BC2266D97C00816B5C /* ChatVC.swift in Sources */,
 				5337F6C42266DB0300816B5C /* SWRevealViewController.m in Sources */,
-				5337F6A822666AD000816B5C /* ViewController.swift in Sources */,
 				5337F6A622666AD000816B5C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,7 +421,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Onchat-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -442,7 +442,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = amitbiswas.Onchat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Onchat-Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
