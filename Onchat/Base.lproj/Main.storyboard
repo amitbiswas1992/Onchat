@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,22 +15,26 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Onchat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="irU-CX-z3u" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="A22-pc-rgP"/>
+                        <segue destination="9gO-pR-LsL" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="lmY-L4-Q8v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-838" y="86"/>
         </scene>
-        <!--View Controller-->
+        <!--ChannelVC-->
         <scene sceneID="06a-IX-WoU">
             <objects>
-                <viewController id="irU-CX-z3u" sceneMemberID="viewController">
+                <viewController id="irU-CX-z3u" customClass="ChannelVC" customModule="Onchat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0g8-18-Xu1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="V5h-qg-BCC"/>
@@ -40,14 +44,50 @@
             </objects>
             <point key="canvasLocation" x="36" y="-60"/>
         </scene>
-        <!--View Controller-->
+        <!--ChatVC-->
         <scene sceneID="5lL-im-a9h">
             <objects>
-                <viewController id="9gO-pR-LsL" sceneMemberID="viewController">
+                <viewController id="9gO-pR-LsL" customClass="ChatVC" customModule="Onchat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="laP-z0-Qae">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fmK-cm-hfc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEz-Bw-SQb">
+                                        <rect key="frame" x="12" y="47" width="24" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="Pu6-OJ-bJZ"/>
+                                            <constraint firstAttribute="height" constant="18" id="QAj-lD-m13"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="smackBurger">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Onchat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcD-TB-q1N">
+                                        <rect key="frame" x="157" y="45" width="61" height="22"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.29019607843137252" green="0.30196078431372547" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="gcD-TB-q1N" firstAttribute="centerX" secondItem="fmK-cm-hfc" secondAttribute="centerX" id="bMs-bb-HCO"/>
+                                    <constraint firstAttribute="height" constant="77" id="c4H-ih-z7T"/>
+                                    <constraint firstItem="gcD-TB-q1N" firstAttribute="centerY" secondItem="iEz-Bw-SQb" secondAttribute="centerY" id="hDS-kC-M6n"/>
+                                    <constraint firstItem="iEz-Bw-SQb" firstAttribute="leading" secondItem="fmK-cm-hfc" secondAttribute="leading" constant="12" id="o0H-N7-VNe"/>
+                                    <constraint firstAttribute="bottom" secondItem="iEz-Bw-SQb" secondAttribute="bottom" constant="12" id="yJH-wF-tPV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fmK-cm-hfc" firstAttribute="top" secondItem="laP-z0-Qae" secondAttribute="top" id="8la-VO-d88"/>
+                            <constraint firstItem="aSN-Vm-ruc" firstAttribute="trailing" secondItem="fmK-cm-hfc" secondAttribute="trailing" id="auV-bP-SWG"/>
+                            <constraint firstItem="fmK-cm-hfc" firstAttribute="leading" secondItem="aSN-Vm-ruc" secondAttribute="leading" id="lHe-uj-FVK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="aSN-Vm-ruc"/>
                     </view>
                 </viewController>
@@ -56,4 +96,7 @@
             <point key="canvasLocation" x="35" y="688"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="smackBurger" width="40" height="40"/>
+    </resources>
 </document>
