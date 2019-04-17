@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1619E25CD16E8E6FFC1A78AC /* Pods_Onchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8524ECF6C687FE561D7A627 /* Pods_Onchat.framework */; };
+		5316E5EC2267A6030000643B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5316E5EB2267A6030000643B /* Constants.swift */; };
+		5316E5EE2267B70D0000643B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5316E5ED2267B70D0000643B /* LoginVC.swift */; };
 		5337F6A622666AD000816B5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5337F6A522666AD000816B5C /* AppDelegate.swift */; };
 		5337F6AB22666AD000816B5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5337F6A922666AD000816B5C /* Main.storyboard */; };
 		5337F6AD22666AD200816B5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5337F6AC22666AD200816B5C /* Assets.xcassets */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		288078A738F78AA6AF7AE185 /* Pods-Onchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Onchat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Onchat/Pods-Onchat.release.xcconfig"; sourceTree = "<group>"; };
+		5316E5EB2267A6030000643B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5316E5ED2267B70D0000643B /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		5337F6A222666AD000816B5C /* Onchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Onchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5337F6A522666AD000816B5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5337F6AA22666AD000816B5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,6 +55,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5316E5EA2267A5E90000643B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5316E5EB2267A6030000643B /* Constants.swift */,
+			);
+			name = Utilities;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		5337F69922666AD000816B5C = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +85,7 @@
 		5337F6A422666AD000816B5C /* Onchat */ = {
 			isa = PBXGroup;
 			children = (
+				5316E5EA2267A5E90000643B /* Utilities */,
 				5337F6BF2266DAD100816B5C /* Supporting Files */,
 				5337F6BA2266D8FD00816B5C /* Controller */,
 				5337F6B92266D8E900816B5C /* View */,
@@ -108,6 +122,7 @@
 				5337F6BB2266D97C00816B5C /* ChatVC.swift */,
 				5337F6BD2266D99600816B5C /* ChannelVC.swift */,
 				53EDE8042266F2420041FAD2 /* ViewController.swift */,
+				5316E5ED2267B70D0000643B /* LoginVC.swift */,
 			);
 			name = Controller;
 			path = ..;
@@ -263,8 +278,10 @@
 			files = (
 				53EDE8052266F2420041FAD2 /* ViewController.swift in Sources */,
 				5337F6BE2266D99600816B5C /* ChannelVC.swift in Sources */,
+				5316E5EE2267B70D0000643B /* LoginVC.swift in Sources */,
 				53EDE807226704740041FAD2 /* GradientView.swift in Sources */,
 				5337F6BC2266D97C00816B5C /* ChatVC.swift in Sources */,
+				5316E5EC2267A6030000643B /* Constants.swift in Sources */,
 				5337F6C42266DB0300816B5C /* SWRevealViewController.m in Sources */,
 				5337F6A622666AD000816B5C /* AppDelegate.swift in Sources */,
 			);
