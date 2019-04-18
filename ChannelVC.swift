@@ -14,6 +14,9 @@ class ChannelVC: UIViewController {
     // Outlets
     
     @IBOutlet weak var loginBtn: UIButton!
+    @IBAction func prepairForUnwind(segue: UIStoryboardSegue){
+        
+    }
     
     
     override func viewDidLoad() {
