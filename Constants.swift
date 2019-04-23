@@ -15,7 +15,9 @@ typealias CompletionHandler = (_ Success: Bool) -> ()
 
 //URL Constant
 let BASE_URL = "https://onchat-ios.herokuapp.com/v1/"
+let HEADER = ["Content-Type": "application/json; charset=uft-8"]
 let URL_REGISTER = "\(BASE_URL)account/resister"
+let URL_LOGIN    = "\(BASE_URL)account/login"
 
 
 let TO_LOGIN = "toLogin"
